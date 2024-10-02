@@ -1,0 +1,100 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a2a; /* Cor de fundo escura */
+    color: #ffffff; /* Texto em branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('path/to/your/background-image.jpg'); /* Imagem de fundo para dar um aspecto de jogo */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Container centralizado */
+.container {
+    background-color: rgba(30, 30, 30, 0.9);
+    border: 2px solid #555;
+    padding: 55px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Estilo do título */
+h1 {
+    color: #f39c12; /* Laranja brilhante para o título */
+    font-size: 32px; /* Tamanho maior */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra no texto para profundidade */
+}
+
+/* Estilo do formulário */
+.hero-form label {
+    display: block;
+    text-align: left;
+    font-size: 18px; /* Tamanho maior */
+    margin-bottom: 5px;
+    color: #f39c12; /* Cor dos rótulos */
+    font-weight: bold; /* Rótulos em negrito */
+}
+
+.hero-form input, .hero-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Bordas arredondadas */
+    border: 1px solid #777; /* Borda mais clara */
+    background-color: #444; /* Cor de fundo para campos */
+    color: #f0f0f0; /* Texto em branco */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Transição suave para a borda */
+}
+
+.hero-form input:focus, .hero-form select:focus {
+    border-color: #f39c12; /* Borda laranja ao focar */
+}
+
+/* Estilo do botão de envio */
+button[type="submit"] {
+    background-color: #f39c12; /* Cor do botão */
+    color: #fff; /* Texto branco */
+    padding: 12px 20px; /* Mais espaçamento */
+    font-size: 18px; /* Tamanho maior */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button[type="submit"]:hover {
+    background-color: #e67e22; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo para exibir o resultado */
+#resultado {
+    margin-top: 20px;
+    background-color: rgba(70, 70, 70, 0.9); /* Fundo levemente transparente */
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap; /* Permite a quebra de linha para texto */
+    font-size: 16px;
+    border: 1px solid #444; /* Borda mais clara */
+    color: #ecf0f1; /* Texto mais suave */
+}
+
+/* Adicionando rolagem para o resultado quando há muitas mensagens */
+#resultado::-webkit-scrollbar {
+    width: 8px;
+}
+
+#resultado::-webkit-scrollbar-thumb {
+    background-color: #f39c12; /* Cor do botão de rolagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
